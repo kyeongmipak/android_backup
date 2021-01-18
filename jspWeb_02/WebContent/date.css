@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+/* body{
+	margin:0;
+	padding:0;
+	font-weight: normal;
+	font-family: sans-serif;	
+} */
+h1{
+	margin: 0 0 10px;
+	padding:0;
+	color: black;
+	font-size: 24px;	
+}
+]
+.box {
+	position:absolute;
+	top: 50%;
+	left:50%;
+	windows:500px;
+	transform: translate(-50%, -50%);
+}
+
+input{
+	position : relative;
+	display: inline-block;
+	font-size: 20px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+input[type="text"]
+{	
+	font-size: 14px;
+	font-weight: bold;
+	width: 150px;
+	height: 60px;
+	border : none;
+	outline : none;
+	padding: 0 25px;
+	border-radius: 25px 25px 25px 25px;
+}
+input[type="text"]:hover
+{
+	background: lightgrey;
+	border-radius: 25px 25px 25px 25px;
+}
+
+input[type="submit"]
+{
+	background:lightgrey;
+	position : relative;
+	border-radius: 25px 25px 25px 25px;
+	width: 150px;
+	height: 60px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	
+}
+
+input[type="submit"]:hover
+{
+	background: grey;
+	
+}
+
+* {
+	padding:0;
+	margin:0;
+	font-family:font;
+}
+
+#wrap {
+		margin:0 auto;
+		width:100%;
+}
+.menuItemHover{
+	margin-left:90%;
+	
+}
+
+
+#topMenuBox {
+	width:70px;
+	height:20px;
+	line-height:20px;
+	padding:0;
+	margin-left:90%;
+}
+
+#topMenuBox ul {
+	padding-left:0;
+	margin:0;
+	list-style:none;
+}
+
+#topMenuBox ul li {
+	float:left;
+	text-align:center;
+	width:100px;
+}
+
+#topMenuBox a {
+	color:black;
+	text-decoration:none;
+	display:block; 
+	
+}
+
+#mainMenuBox {
+	height:60px;
+	line-height:60px;
+	padding:0;
+	margin:0 auto;
+	width:70px;
+	margin-left:90%;
+	margin-right:0px;
+}
+
+#mainMenuBox ul {
+	padding-left:0;
+	margin:0;
+	list-style:none;
+}
+
+#mainMenuBox ul li {
+	float:left;
+	text-align:center;
+	width:250px;
+}
+
+#mainMenuBox a {
+	text-decoration:none;
+	display:block;
+	color:black;
+	font-family:midnight;
+	font-size:18px;
+}
+
+#mainMenuBox a:hover {
+	color:black;
+}
+
+#subMenuBox {
+	width:300;
+	line-height:60px;
+	text-align:center;
+	padding-bottom:0;
+	margin-left:90%;
+	margin-right:0px;
+	visibility:hidden;
+	position:relative;
+	z-index:10;
+}
+
+.subMenuItem {
+	width:250px;
+	padding:0;
+	background-color:pink;
+}
+
+.subMenuItem ul {
+	list-style:none;
+}
+
+
+.subMenuItem a {
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	font-family:midnight;
+}
+
+.subMenuItem a:hover {
+	color:#053517;
+	display:block;
+	text-decoration:none;
+}
