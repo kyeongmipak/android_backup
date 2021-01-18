@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "MenuCheck_1214"

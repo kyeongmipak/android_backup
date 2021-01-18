@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Selection"
+        />
+
+    <Button
+        android:id="@+id/home1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        />
+
+    <Button
+        android:id="@+id/end1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End"
+        />
+
+    <Button
+        android:id="@+id/selblock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sel Block"
+        />
+
+    <Button
+        android:id="@+id/selall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sel All"
+        />
+
+
+    <Button
+        android:id="@+id/getsel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Sel"
+        />
+
+</LinearLayout>

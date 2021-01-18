@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "CallActivity_1216"

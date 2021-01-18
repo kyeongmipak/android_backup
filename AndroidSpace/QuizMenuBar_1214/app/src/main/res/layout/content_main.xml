@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUM 1"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+        <EditText
+            android:id="@+id/inputNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="숫자 입력"
+            android:textSize="15dp"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUM 2"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <EditText
+            android:id="@+id/inputNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="숫자 입력"
+            android:textSize="15dp"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/resultNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

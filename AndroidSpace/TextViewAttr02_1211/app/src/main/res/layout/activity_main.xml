@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------ 입력 문자 제한 ------"
+        />
+
+    <!--  digits에 입력된 문자만 사용 가능  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aeiou"
+        android:digits="aeiou"
+        />
+
+    <!--  input type 값에 따라 키패드 출력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:inputType="number"
+        />
+
+    <!--  numberSigned는 마이너스 값 입력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-1234"
+        android:inputType="numberSigned"
+        />
+
+    <!--  numberDecimal는 실수값 입력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12.34"
+        android:inputType="numberDecimal"
+        />
+
+    <!--  마이너스 값과 실수 둘다 작성 가능  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12.34"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <!--  비밀번호 입력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:inputType="textPassword"
+        />
+
+</LinearLayout>

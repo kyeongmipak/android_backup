@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "SelectDialog3_1217"

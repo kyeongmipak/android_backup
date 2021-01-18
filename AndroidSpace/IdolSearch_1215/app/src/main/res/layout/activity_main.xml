@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        android:gravity="left"
+        android:layout_weight="2"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearFirst"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            >
+
+            <VideoView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+
+                />
+<!--            <ImageView-->
+<!--                android:id="@+id/tv_intro"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                />-->
+
+             <Button
+                 android:id="@+id/btnMemberSearch"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Seventeen MEMBER"
+                 android:gravity="center_vertical"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="70dp"
+                 android:backgroundTint="#92A8D1"
+                 android:textColor="@color/white"
+                 />
+
+                        <TextView
+                            android:id="@+id/homepage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:text="공식 홈페이지"
+                            android:autoLink="web"
+                            android:gravity="center"
+                            android:layout_marginBottom="50px"
+                            android:layout_gravity="bottom|center"
+                            />
+                        <TextView
+                            android:id="@+id/cafe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:text="Fan Club"
+                            android:autoLink="web"
+                            android:gravity="center"
+                            android:layout_marginBottom="50px"
+                            android:layout_gravity="bottom|center"
+                            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSecond"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            >
+
+            <ListView
+                android:id="@+id/lv_idolMember"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="6"
+                android:layout_marginBottom="30px"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/tv_idolTitleName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_idolName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_idolTitleBirth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_idolBirth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_idolTitleRole"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_idolRole"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_idolTitleNation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_idolNation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="처음으로"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#F7CAC9"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

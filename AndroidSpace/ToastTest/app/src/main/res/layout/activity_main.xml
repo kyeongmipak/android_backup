@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/shortMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="짧은 메세지"
+        />
+
+    <Button
+        android:id="@+id/longMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="긴 메세지"
+        />
+
+
+    <Button
+        android:id="@+id/countMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카운트로 연속 출력"
+        />
+
+</LinearLayout>

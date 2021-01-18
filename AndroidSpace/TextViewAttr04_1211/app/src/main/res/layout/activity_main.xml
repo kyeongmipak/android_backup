@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---- 대소문자 변환 ----"
+        />
+
+    <!--  대문자 출력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Characters"
+        android:inputType="textCapCharacters"
+        />
+
+    <!--  띄어쓰기 시 첫글자 대문자  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Words"
+        android:inputType="textCapWords"
+        />
+
+    <!--  첫 문장 끝나고 다음 문장 시작 시 대문자로 시작(보통 .으록 구분)  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sentences"
+        android:inputType="textCapSentences"
+        />
+
+    <!--  긴 문자열 생략방법  -->
+    <!--  ... 위치  (디폴트 마지막) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you? Fine! Thank you and you? Just fine! How about this phone? 대한민국"
+        android:singleLine="true"
+        />
+
+    <!-- ... 없음 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you? Fine! Thank you and you? Just fine! How about this phone? 대한민국"
+        android:singleLine="true"
+        android:ellipsize="none"
+        />
+
+    <!-- ... 위치 : 시작 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you? Fine! Thank you and you? Just fine! How about this phone? 대한민국"
+        android:singleLine="true"
+        android:ellipsize="start"
+        />
+
+    <!-- ... 위치 : 중간 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you? Fine! Thank you and you? Just fine! How about this phone? 대한민국"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        />
+
+    <!-- ... 위치 : 끝 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you? Fine! Thank you and you? Just fine! How about this phone? 대한민국"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <!--  힌트 입력(색깔도 변경할 수 있다) -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="input your name"
+        android:textColorHint="#ff0000"
+        />
+
+</LinearLayout>

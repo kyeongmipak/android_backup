@@ -1,0 +1,6 @@
+<resources>
+<!-- static 변수와 같은 역할을 한다 -->
+    <string name="app_name">TextView</string>
+    <string name="insa">Hello</string>
+    <string name="anyoung">안녕하세요</string>
+</resources>

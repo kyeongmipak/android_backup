@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사용자 ID와 Password를 입력하세요!"
+        android:textColor="#ff0000"
+        android:textSize="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 ID : "
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/userid_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID                  "
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="패스워드 : "
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/password_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password       "
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center"
+        android:backgroundTint="#999"
+        />
+
+</LinearLayout>

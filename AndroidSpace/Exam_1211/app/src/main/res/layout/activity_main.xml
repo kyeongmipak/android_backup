@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="사칙연산 계산기"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#ff9999"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_weight="1.5"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:src="@drawable/calculation"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="첫번째 숫자 :"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:id="@+id/inputNum1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="첫번째 숫자를 입력하세요"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="두번째 숫자 :"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:id="@+id/inputNum2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="두번째 숫자를 입력하세요"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="덧셈"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#F67B7B"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뺄셈"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#F67B7B"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="곱셈"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#F67B7B"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나눗셈"
+            android:backgroundTint="#F67B7B"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:id="@+id/resultFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="결과는 ?"
+            android:textSize="50dp"
+            android:textColor="#ff9999"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/resultSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="50dp"
+            android:textColor="#ff9999"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
